@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="calc">
+   <input type="text" class="calc-result" disabled>
+    <div class="calc-buttons">
+        <button onclick="itemToDisplay('7')" class="calc-btn numeric">7</button>
+        <button onclick="itemToDisplay('8')"class="calc-btn numeric">8</button>
+        <button onclick="itemToDisplay('9')" class="calc-btn numeric">9</button>
+        <button onclick="delItemFromDisplay('')" class="calc-btn">DEL</button>
+        <button onclick="itemToDisplay('4')" class="calc-btn numeric">4</button>
+        <button onclick="itemToDisplay('5')" class="calc-btn numeric">5</button>
+        <button onclick="itemToDisplay('6')" class="calc-btn numeric">6</button>
+        <button onclick="mathematicalExpression('+')" class="calc-btn">+</button>
+        <button onclick="itemToDisplay('1')" class="calc-btn numeric">1</button>
+        <button onclick="itemToDisplay('2')" class="calc-btn numeric">2</button>
+        <button onclick="itemToDisplay('3')" class="calc-btn numeric">3</button>
+        <button onclick="mathematicalExpression('-')" class="calc-btn">-</button>
+        <button class="calc-btn">.</button>
+        <button onclick="itemToDisplay('0')" class="calc-btn numeric">0</button>
+        <button onclick="mathematicalExpression('/')" class="calc-btn">/</button>
+        <button onclick="mathematicalExpression('*')" class="calc-btn">*</button>
+        <button onclick="delOneItemFromDisplay()" class="calc-btn calc-btn-wide">RESET</button>
+        <button class="calc-btn calc-btn-wide">=</button>
+    </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
